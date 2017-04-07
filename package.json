@@ -4,12 +4,12 @@
   "description": "dark theme generator",
   "main": "app.js",
   "scripts": {
-  "start": "npm run watch-all",
-  "build-css": "node-sass app.scss -o dist/ --output-style compressed",
-  "watch-css": "node-sass -w app.scss -o dist/ --output-style compressed",
-	"bundle-js": "browserify app.js | uglifyjs > dist/bundle.js",
-	"watch-js": "watchify app.js -o dist/bundle.js -v",
-  "watch-all": "concurrently \"npm run watch-js\" \"npm run watch-css\""
+    "start": "npm run watch-all",
+    "build-css": "node-sass app.scss -o dist/ --output-style compressed",
+    "watch-css": "node-sass -w app.scss -o dist/ --output-style compressed",
+    "bundle-js": "browserify app.js | uglifyjs > dist/bundle.js",
+    "watch-js": "watchify app.js -o dist/bundle.js -v",
+    "watch-all": "concurrently \"npm run watch-js\" \"npm run watch-css\""
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,10 @@
     "vue": "^2.2.6"
   },
   "devDependencies": {
+    "browserify": "^14.3.0",
+    "concurrently": "^3.4.0",
     "node-sass": "^4.5.2",
-    "concurrently": "^3.4.0"
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.9.0"
   }
 }
