@@ -1,0 +1,30 @@
+{
+  "name": "darkenizer",
+  "version": "0.0.1",
+  "description": "dark theme generator",
+  "main": "app.js",
+  "scripts": {
+	"bundle": "browserify app.js -o dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittau/darkenizer.git"
+  },
+  "keywords": [
+    "dark",
+    "theme",
+    "generator"
+  ],
+  "author": "Vitor Machado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vittau/darkenizer/issues"
+  },
+  "homepage": "https://github.com/vittau/darkenizer#readme",
+  "dependencies": {
+    "color-space": "^1.14.7",
+    "scss-parser": "^1.0.0",
+    "vue": "^2.2.6"
+  }
+}
