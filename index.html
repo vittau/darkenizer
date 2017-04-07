@@ -16,24 +16,35 @@
 			<header>
 				<h1>darkenizer</h1>
 			</header>
-
-			<div class="row">
-				<div class="col">
-					<p>{{ message }}</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<textarea id="inputTextArea" v-model="message"></textarea>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="float-right">
-						<button type="button" class="btn btn-primary">Darkenize!</button>
+  			<transition name="fade" mode="out-in">
+				<main v-if="step == 1" key="1">
+					<div class="row">
+						<div class="col">
+							<p>{{ message }}</p>
+						</div>
 					</div>
-				</div>
-			</div>
+					<div class="row">
+						<div class="col">
+							<textarea id="inputTextArea" v-model="message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="float-right">
+								<button type="button" class="btn btn-primary" @click="parseSCSS">Darkenize!</button>
+							</div>
+						</div>
+					</div>
+				</main>
+			
+				<main v-if="step == 2" key="2">
+					<div class="row">
+						<div class="col">
+							<p>Parsed file!</p>
+						</div>
+					</div>
+				</main>
+			</transition>
 
 			<footer>
 				Developed by <a href="https://www.vitormachado.me" target="_blank">Vitor Machado</a>.
