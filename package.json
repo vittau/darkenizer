@@ -1,41 +1,41 @@
 {
-  "name": "darkenizer",
-  "version": "0.0.1",
-  "description": "dark theme generator",
-  "main": "app.js",
-  "scripts": {
-    "start": "npm run watch-all",
-    "build-css": "node-sass app.scss -o dist/ --output-style compressed",
-    "watch-css": "node-sass -w app.scss -o dist/ --output-style compressed",
-    "bundle-js": "browserify app.js | uglifyjs > dist/bundle.js",
-    "watch-js": "watchify app.js -o dist/bundle.js -v",
-    "watch-all": "concurrently \"npm run watch-js\" \"npm run watch-css\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vittau/darkenizer.git"
-  },
-  "keywords": [
-    "dark",
-    "theme",
-    "generator"
-  ],
-  "author": "Vitor Machado",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vittau/darkenizer/issues"
-  },
-  "homepage": "https://github.com/vittau/darkenizer#readme",
-  "dependencies": {
-    "color-space": "^1.14.7",
-    "scss-parser": "^1.0.0",
-    "vue": "^2.2.6"
-  },
-  "devDependencies": {
-    "browserify": "^14.3.0",
-    "concurrently": "^3.4.0",
-    "node-sass": "^4.5.2",
-    "uglifyjs": "^2.4.10",
-    "watchify": "^3.9.0"
-  }
+	"name": "darkenizer",
+	"version": "0.0.1",
+	"description": "dark theme generator",
+	"main": "app.js",
+	"scripts": {
+		"start": "npm run watch-all",
+		"build-css": "node-sass app.scss -o dist/ --output-style compressed",
+		"watch-css": "node-sass -w app.scss -o dist/ --output-style compressed",
+		"bundle-js": "browserify app.js | uglifyjs > dist/bundle.js",
+		"watch-js": "watchify app.js -o dist/bundle.js -v",
+		"watch-all": "concurrently \"npm run watch-js\" \"npm run watch-css\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vittau/darkenizer.git"
+	},
+	"keywords": [
+		"dark",
+		"theme",
+		"generator"
+	],
+	"author": "Vitor Machado",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/vittau/darkenizer/issues"
+	},
+	"homepage": "https://github.com/vittau/darkenizer#readme",
+	"dependencies": {
+		"color-space": "^1.14.7",
+		"scss-parser": "^1.0.0",
+		"vue": "^2.2.6"
+	},
+	"devDependencies": {
+		"browserify": "^14.3.0",
+		"concurrently": "^3.4.0",
+		"node-sass": "^4.5.2",
+		"uglifyjs": "^2.4.10",
+		"watchify": "^3.9.0"
+	}
 }
