@@ -4,6 +4,7 @@
   "description": "dark theme generator",
   "main": "app.js",
   "scripts": {
+  "build-css": "node-sass app.scss -o dist/ --output-style compressed",
 	"bundle": "browserify app.js | uglifyjs > dist/bundle.js",
 	"watch": "watchify app.js -o dist/bundle.js -v",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +28,8 @@
     "color-space": "^1.14.7",
     "scss-parser": "^1.0.0",
     "vue": "^2.2.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
   }
 }
