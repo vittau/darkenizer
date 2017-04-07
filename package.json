@@ -4,7 +4,7 @@
   "description": "dark theme generator",
   "main": "app.js",
   "scripts": {
-	"bundle": "browserify app.js -o dist/bundle.js",
+	"bundle": " browserify app.js | uglifyjs > dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
