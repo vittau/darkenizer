@@ -105,6 +105,11 @@ header {
 	height: 400px;
 }
 
+.darkenizer-word {
+	font-family: $title-font;
+	font-size: 1.4em;
+}
+
 /*Transitions*/
 .fade-enter-active, .fade-leave-active {
 	transition: opacity .25s
