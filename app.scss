@@ -68,8 +68,12 @@ a {
 
 header {
 	margin-top: 20px;
-	color: $primary-light-color;
-	font-family: $title-font;
+	h1 {
+		color: $primary-light-color;
+		font-family: $title-font;
+		font-size: 3.5rem;
+		text-align: center;
+	}
 }
 
 .footer {
@@ -81,7 +85,6 @@ header {
 	line-height: $footer-line-height; /* Vertically center the text there */
 	background-color: $secondary-dark-color;
 	color: $primary-light-color;
-
 	p {
 		margin-bottom: 0;
 	}
