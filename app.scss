@@ -4,6 +4,8 @@ $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
 $primary-button-color: #457095;
 $success-button-color: #65af65;
+$anchor-color: #457095;
+$anchor-hover-color: #88aac8;
 
 /*Bootstrap overrides*/
 .btn-primary {
@@ -37,6 +39,13 @@ body {
 
 p {
 	color: $primary-light-color;
+}
+
+a {
+	color: $anchor-color;
+	&:hover {
+		color: $anchor-hover-color;
+	}
 }
 
 header {
