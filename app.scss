@@ -2,7 +2,21 @@
 $primary-dark-color: #1D1D1D;
 $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
+$primary-button-color: #457095;
+$success-button-color: #65af65;
 
+/*Bootstrap overrides*/
+.btn-primary {
+	color: #fff;
+	background-color: $primary-button-color;
+	border-color: $primary-button-color;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: $success-button-color;
+	border-color: $success-button-color;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -21,11 +35,11 @@ body {
 	background: $primary-dark-color;
 }
 
-header {
+p {
 	color: $primary-light-color;
 }
 
-main p {
+header {
 	color: $primary-light-color;
 }
 
