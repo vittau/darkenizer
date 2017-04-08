@@ -17,12 +17,11 @@
 				<h1>darkenizer</h1>
 			</header>
 
-			<div id="darkenizer-description">
-				<p>darkenizer is a dark theme generator. All you have to do is insert your CSS/SCSS code in the input below, and darkenizer will generate a dark version of your colors for you.</p>
-			</div>
-
   			<transition name="fade" mode="out-in">
 				<main v-if="step == 1" key="1">
+					<div id="darkenizer-description">
+						<p>darkenizer is a dark theme generator. All you have to do is insert your CSS/SCSS code in the input below, and darkenizer will generate a dark version of your colors for you.</p>
+					</div>
 					<div class="row">
 						<div class="col">
 							<textarea id="inputTextArea" v-model="code" placeholder="Paste your CSS/SCSS code here..."></textarea>
@@ -36,7 +35,6 @@
 						</div>
 					</div>
 				</main>
-			
 				<main v-if="step == 2" key="2">
 					<div class="row">
 						<div class="col">
@@ -52,7 +50,6 @@
 						</div>
 					</div>
 				</main>
-
 				<main v-if="step == 3" key="3">
 					<div class="row">
 						<div class="col">
