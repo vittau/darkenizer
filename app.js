@@ -11,6 +11,9 @@ var app = new Vue({
 	methods: {
 		parseSCSS: function() {
 			this.step = 2;
+		},
+		makeResults: function() {
+			this.step = 3;
 		}
 	}
 });

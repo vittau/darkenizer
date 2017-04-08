@@ -40,7 +40,29 @@
 				<main v-if="step == 2" key="2">
 					<div class="row">
 						<div class="col">
-							<p>Parsed file!</p>
+							<p>Show resulting colors here...</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="float-right">
+								<button type="button" class="btn btn-primary" @click="makeResults">Results</button>
+							</div>
+						</div>
+					</div>
+				</main>
+
+				<main v-if="step == 3" key="3">
+					<div class="row">
+						<div class="col">
+							<p>Show result and file download button here...</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="float-right">
+								<button type="button" class="btn btn-primary">Download</button>
+							</div>
 						</div>
 					</div>
 				</main>
