@@ -20,12 +20,12 @@
 				<main v-if="step == 1" key="1">
 					<div class="row">
 						<div class="col">
-							<p>{{ message }}</p>
+							<p>Paste your CSS/SCSS code below:</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col">
-							<textarea id="inputTextArea" v-model="message"></textarea>
+							<textarea id="inputTextArea" v-model="code" placeholder="Paste your CSS/SCSS code here..."></textarea>
 						</div>
 					</div>
 					<div class="row">

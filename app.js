@@ -5,7 +5,7 @@ var app = new Vue({
 	el: '#app',
 	data: {
 		step: 1,
-		message: 'Paste your SCSS file here...'
+		code: ''
 	},
 
 	methods: {
