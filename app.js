@@ -1,5 +1,5 @@
-//var Vue = require('vue/dist/vue.min');
-var Vue = require('vue/dist/vue');
+var Vue = require('vue/dist/vue.min');
+//var Vue = require('vue/dist/vue');
 var parser = require('./parser');
 
 var app = new Vue({
