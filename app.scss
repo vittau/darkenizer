@@ -120,3 +120,8 @@ header {
 .fade-enter, .fade-leave-active {
 	opacity: 0
 }
+
+/*Fix FB scrolling*/
+.fb_iframe_widget {
+	max-width: 100%;
+}
