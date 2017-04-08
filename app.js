@@ -11,7 +11,8 @@ var app = new Vue({
 
 	methods: {
 		parseSCSS: function() {
-			parser.parseFile();
+			var result = parser.parseFile(this.code);
+			console.log(result);
 			this.step = 2;
 		},
 		makeResults: function() {
