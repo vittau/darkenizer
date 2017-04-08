@@ -16,13 +16,13 @@
 			<header>
 				<h1>darkenizer</h1>
 			</header>
+
+			<div class="container" id="darkenizer-description">
+				<p>darkenizer is a dark theme generator. All you have to do is insert your CSS/SCSS code in the input below, and darkenizer will generate a dark version of your colors for you.</p>
+			</div>
+
   			<transition name="fade" mode="out-in">
 				<main v-if="step == 1" key="1">
-					<div class="row">
-						<div class="col">
-							<p>Paste your CSS/SCSS code below:</p>
-						</div>
-					</div>
 					<div class="row">
 						<div class="col">
 							<textarea id="inputTextArea" v-model="code" placeholder="Paste your CSS/SCSS code here..."></textarea>
