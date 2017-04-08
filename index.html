@@ -30,7 +30,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="float-right">
-								<button type="button" class="btn btn-primary" @click="parseSCSS" :disabled="code.length == 0">Darkenize!</button>
+								<button type="button" class="btn btn-success" @click="parseSCSS" :disabled="code.length == 0">Darkenize!</button>
 							</div>
 						</div>
 					</div>
@@ -38,34 +38,40 @@
 				<main v-if="step == 2" key="2">
 					<div class="row">
 						<div class="col">
-							<p>Show resulting colors here...</p>
+							<textarea id="resultTextArea" v-model="result" readonly></textarea>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col">
 							<div class="float-right">
 								<button type="button" class="btn btn-secondary" @click="back">Back</button>
-								<button type="button" class="btn btn-primary" @click="makeResults">Results</button>
-							</div>
-						</div>
-					</div>
-				</main>
-				<main v-if="step == 3" key="3">
-					<div class="row">
-						<div class="col">
-							<p>Show result and file download button here...</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="float-right">
-								<button type="button" class="btn btn-secondary" @click="back">Back</button>
-								<button type="button" class="btn btn-success">Download</button>
+								<button type="button" class="btn btn-primary" @click="download">Download</button>
 							</div>
 						</div>
 					</div>
 				</main>
 			</transition>
+
+			<!-- Modal -->
+			<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="errorModalLabel">Error!</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							{{error}}
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<footer class="footer">

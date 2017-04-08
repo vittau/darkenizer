@@ -6,20 +6,32 @@ var app = new Vue({
 	el: '#app',
 	data: {
 		step: 1,
-		code: ''
+		code: '.red {\n\tcolor: #ffaaaa;\n}\n.green {\n\tcolor: #aaffaa;\n}\n.blue {\n\tcolor: #aaaaff;\n}',
+		result: '',
+		error: ''
 	},
 
 	methods: {
 		parseSCSS: function() {
-			var result = parser.parseFile(this.code);
-			console.log(result);
-			this.step = 2;
+			var changedColors = parser.parseFile(this.code);
+			if(!changedColors.success) {
+				this.errorModal(changedColors.value);
+			}
+			else {
+				this.result = changedColors.value;
+				this.step = 2;
+			}
 		},
-		makeResults: function() {
-			this.step = 3;
+		download: function() {
+			//TODO: Download file.
+			return;
 		},
 		back: function() {
 			this.step--;
+		},
+		errorModal: function(err) {
+			this.error = err.message;
+			$('#errorModal').modal();
 		}
 	}
 });
