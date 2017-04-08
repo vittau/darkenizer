@@ -1,4 +1,6 @@
 /*Variables*/
+$title-font: "Sue Ellen Francisco", cursive;
+$primary-font: "Lato", sans-serif;
 $primary-dark-color: #1D1D1D;
 $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
@@ -6,6 +8,9 @@ $primary-button-color: #457095;
 $success-button-color: #65af65;
 $anchor-color: #457095;
 $anchor-hover-color: #88aac8;
+
+@import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 /*Bootstrap overrides*/
 .btn-primary {
@@ -37,6 +42,10 @@ body {
 	background: $primary-dark-color;
 }
 
+html, body, button, input, optgroup, select, textarea {
+	font-family: $primary-font;
+}
+
 p {
 	color: $primary-light-color;
 }
@@ -49,7 +58,9 @@ a {
 }
 
 header {
+	margin-top: 20px;
 	color: $primary-light-color;
+	font-family: $title-font;
 }
 
 .footer {
