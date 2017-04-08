@@ -6,6 +6,7 @@ $primary-dark-color: #1D1D1D;
 $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
 $textarea-shadow-color: #777777;
+$button-color: #ffffff;
 $primary-button-color: #457095;
 $primary-button-disabled-color: #32526d;
 $success-button-color: #65af65;
@@ -20,7 +21,7 @@ $footer-line-height: 28px;
 
 /*Bootstrap overrides*/
 .btn-primary {
-	color: #fff;
+	color: $button-color;
 	background-color: $primary-button-color;
 	border-color: $primary-button-color;
 	&:disabled {
@@ -30,7 +31,7 @@ $footer-line-height: 28px;
 }
 
 .btn-success {
-	color: #fff;
+	color: $button-color;
 	background-color: $success-button-color;
 	border-color: $success-button-color;
 }
@@ -91,10 +92,11 @@ header {
 	}
 }
 
-#darkenizer-description {
+#darkenizer-description h2 {
 	font-size: 1.2em;
 	text-align: center;
 	line-height: 1.3;
+	color: $primary-light-color;
 }
 
 #inputTextArea,
