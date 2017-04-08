@@ -14,6 +14,9 @@ var app = new Vue({
 		},
 		makeResults: function() {
 			this.step = 3;
+		},
+		back: function() {
+			this.step--;
 		}
 	}
 });
