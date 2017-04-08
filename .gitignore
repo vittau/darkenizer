@@ -5,6 +5,3 @@ npm-debug.log
 # Code Editor Settings
 .idea
 .vs
-
-# Distribution folder
-dist
