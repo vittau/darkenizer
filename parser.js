@@ -10,11 +10,11 @@ function parseFile(code) {
 	catch(err) {
 		return { success: false, value: err };
 	}
-	var $ = createQueryWrapper(ast);
-	$('color_hex').replace(function(el) {
+	var qw = createQueryWrapper(ast);
+	qw('color_hex').replace(function(el) {
 		return { type: "color_hex", value: colors.invertColor(el.node.value) };
 	});
-	var scss = stringify($().get(0));
+	var scss = stringify(qw().get(0));
 	return { success: true, value: scss };
 }
 

@@ -27,7 +27,7 @@ var app = new Vue({
 			return;
 		},
 		back: function() {
-			this.step--;
+			this.step = 1;
 		},
 		errorModal: function(err) {
 			this.error = err.message;
