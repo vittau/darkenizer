@@ -1,6 +1,7 @@
 /*Variables*/
 $title-font: "Sue Ellen Francisco", cursive;
 $primary-font: "Lato", sans-serif;
+
 $primary-dark-color: #1D1D1D;
 $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
@@ -8,6 +9,9 @@ $primary-button-color: #457095;
 $success-button-color: #65af65;
 $anchor-color: #457095;
 $anchor-hover-color: #88aac8;
+
+$footer-height: 30px;
+$footer-line-height: 28px;
 
 @import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -34,7 +38,7 @@ html {
 
 body {
 	/* Margin bottom by footer height */
-	margin-bottom: 60px;
+	margin-bottom: $footer-height;
 }
 
 html,
@@ -68,10 +72,14 @@ header {
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 60px;
-	line-height: 60px; /* Vertically center the text there */
+	height: $footer-height;
+	line-height: $footer-line-height; /* Vertically center the text there */
 	background-color: $secondary-dark-color;
 	color: $primary-light-color;
+
+	p {
+		margin-bottom: 0;
+	}
 }
 
 #inputTextArea {
