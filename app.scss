@@ -5,6 +5,7 @@ $primary-font: "Lato", sans-serif;
 $primary-dark-color: #1D1D1D;
 $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
+$textarea-shadow-color: #777777;
 $primary-button-color: #457095;
 $primary-button-disabled-color: #32526d;
 $success-button-color: #65af65;
@@ -100,8 +101,9 @@ header {
 #resultTextArea {
 	width: 100%;
 	background-color: $secondary-dark-color;
-	border-color: $secondary-dark-color;
-	border-radius: 5px;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px $textarea-shadow-color;
 	margin-bottom: 10px;
 	color: $primary-light-color;
 	height: 400px;
