@@ -4,6 +4,19 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#272822">
+		<title>Darkenizer</title>
+		<meta name="description" content="Dark theme generator">
+		<meta name="keywords" content="dark,theme,generator,css,scss">
+		<meta name="author" content="Vitor Machado">
+		<meta property="fb:app_id" content="831476910324088"/>
+		<link rel="canonical" href="https://www.vitormachado.me/darkenizer">
+
+		<meta content="Darkenizer" property="og:site_name">
+		<meta content="Darkenizer" property="og:title">
+		<meta content="website" property="og:type">
+		<meta content="Dark theme generator" property="og:description">
+		<meta content="https://www.vitormachado.me/darkenizer" property="og:url">
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -12,10 +25,21 @@
 		<link rel="stylesheet" href="dist/app.css">
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=831476910324088";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<div id="app" class="container">
 			<header>
 				<h1>darkenizer</h1>
 			</header>
+			<div class="fb-like" data-href="https://www.vitormachado.me/darkenizer" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
   			<transition name="fade" mode="out-in">
 				<main v-if="step == 1" key="1">
