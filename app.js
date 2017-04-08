@@ -1,5 +1,6 @@
 //var Vue = require('vue/dist/vue.min');
 var Vue = require('vue/dist/vue');
+var parser = require('./parser');
 
 var app = new Vue({
 	el: '#app',
@@ -10,6 +11,7 @@ var app = new Vue({
 
 	methods: {
 		parseSCSS: function() {
+			parser.parseFile();
 			this.step = 2;
 		},
 		makeResults: function() {
