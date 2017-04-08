@@ -122,6 +122,6 @@ header {
 }
 
 /*Fix FB scrolling*/
-.fb_iframe_widget {
+.fb_iframe_widget * {
 	max-width: 100%;
 }
