@@ -52,7 +52,7 @@
 							<textarea id="inputTextArea" v-model="code" placeholder="Paste your CSS/SCSS code here..."></textarea>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row button-row">
 						<div class="col">
 							<div class="float-right">
 								<button type="button" class="btn btn-success" @click="parseSCSS" :disabled="code.length == 0">Darkenize!</button>
@@ -66,7 +66,7 @@
 							<textarea id="resultTextArea" v-model="result" readonly></textarea>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row button-row">
 						<div class="col">
 							<div class="float-right">
 								<button type="button" class="btn btn-secondary" @click="back">Back</button>

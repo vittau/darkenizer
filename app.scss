@@ -112,6 +112,10 @@ header {
 	font-size: 1.4em;
 }
 
+.button-row {
+	padding-bottom: 20px;
+}
+
 /*Transitions*/
 .fade-enter-active, .fade-leave-active {
 	transition: opacity .25s
