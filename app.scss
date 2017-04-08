@@ -6,6 +6,7 @@ $primary-dark-color: #1D1D1D;
 $secondary-dark-color: #272822;
 $primary-light-color: #f0f0f0;
 $primary-button-color: #457095;
+$primary-button-disabled-color: #32526d;
 $success-button-color: #65af65;
 $anchor-color: #457095;
 $anchor-hover-color: #88aac8;
@@ -21,6 +22,10 @@ $footer-line-height: 28px;
 	color: #fff;
 	background-color: $primary-button-color;
 	border-color: $primary-button-color;
+	&:disabled {
+		background-color: $primary-button-disabled-color;
+		border-color: $primary-button-disabled-color;
+	}
 }
 
 .btn-success {
