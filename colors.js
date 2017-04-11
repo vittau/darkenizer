@@ -12,7 +12,7 @@ function invert(value, max) {
 
 //x is the input color, c is the contrast parameter. max is the max input value possible.
 function sigmoid(x, c, max=100) {
-	var expo = -(x - 0.5)/0.1;
+	var expo = -(x - 0.5)/0.06;
 	var y = (x + c/(1 + Math.exp(expo)))/(1 + (c/max));
 	return y;
 }
