@@ -13,7 +13,7 @@ $success-button-color: #65af65;
 $anchor-color: #457095;
 $anchor-hover-color: #88aac8;
 
-$footer-height: 30px;
+$footer-height: 200px;
 $footer-line-height: 28px;
 
 @import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
@@ -87,8 +87,11 @@ header {
 	line-height: $footer-line-height; /* Vertically center the text there */
 	background-color: $secondary-dark-color;
 	color: $primary-light-color;
+	padding-top: 20px;
 	p {
 		margin-bottom: 0;
+		font-family: "Sue Ellen Francisco",cursive;
+		font-size: 1.8em;
 	}
 }
 
