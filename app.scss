@@ -13,6 +13,7 @@ $success-button-color: #65af65;
 $success-button-hover-color:#449d44;
 $anchor-color: $success-button-color;
 $anchor-hover-color: $success-button-hover-color;
+$anchor-focus-color: #2f6d2f;
 
 $footer-height: 200px;
 $footer-line-height: 28px;
@@ -66,6 +67,9 @@ a {
 	color: $anchor-color;
 	&:hover {
 		color: $anchor-hover-color;
+	}
+	&:focus {
+		color: $anchor-focus-color;
 	}
 }
 
