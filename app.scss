@@ -10,8 +10,9 @@ $button-color: #ffffff;
 $primary-button-color: #457095;
 $primary-button-disabled-color: #32526d;
 $success-button-color: #65af65;
-$anchor-color: #457095;
-$anchor-hover-color: #88aac8;
+$success-button-hover-color:#449d44;
+$anchor-color: $success-button-color;
+$anchor-hover-color: $success-button-hover-color;
 
 $footer-height: 200px;
 $footer-line-height: 28px;
